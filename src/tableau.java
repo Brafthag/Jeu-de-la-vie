@@ -13,7 +13,7 @@ public class tableau {
 		twoDim[7][9] = 1;
 		twoDim[7][10] = 1;
 		twoDim[7][11] = 1;
-		//twoDim[9][9] = 1;
+		twoDim[7][12] = 1;
 		//twoDim[9][10] = 1;
 		//twoDim[9][11] = 1;
 		//twoDim[8][12] = 1;
@@ -21,7 +21,7 @@ public class tableau {
 		
 		display(twoDim);
 		
-		while (tour < 6){
+		while (tour < 100){
 			
 				
 			int compteTour = ++tour;
@@ -42,9 +42,9 @@ public class tableau {
 		for (int[] row: table) {
 			for (int cell: row) {
 				if (cell == 0) {
-					System.out.print(" " + 0 + " ");
+					System.out.print(" " + " " + " ");
 				} else {
-					System.out.print(" " + 1 + " ");
+					System.out.print(" " + " x " + " ");
 				}
 			}
 			System.out.println();
